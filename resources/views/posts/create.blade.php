@@ -28,6 +28,14 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
+                                <label for="img">Post Image</label>
+                                <input type="file" class="form-control-file @error('img') is-invalid @enderror" name="img">
+                                @error('img')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+
 
                                 <input type="submit" class="btn btn-primary">
                             </div>

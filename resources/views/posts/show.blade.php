@@ -10,7 +10,8 @@
                     Title: {{$post -> title}} <br>
                     Description: {{$post -> description}} <br>
                     Created at: {{$post -> created_at}}<br>
-
+                    Image: {{$post -> img}} <br>
+                    <img src="{{ asset('/storage/img/'.$post->img) }}">
                 </div>
             </div>
         </div>
