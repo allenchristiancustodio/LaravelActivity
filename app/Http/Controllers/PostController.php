@@ -36,7 +36,7 @@ class PostController extends Controller
         } else {
             return view('posts.alert');
         }
-
+ //ss
     }
 
     /**
