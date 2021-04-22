@@ -29,7 +29,7 @@ class PostController extends Controller
      */
     public function create()
     {
-
+  //sdssdsd
         $user_id = Auth::id();
         if ($user_id) {
             return view('posts.create');
